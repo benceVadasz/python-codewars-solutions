@@ -19,4 +19,7 @@ def title_case(title, minor_words=''):
     return fin[:-1]
 
 
-print(title_case('THE WIND IN THE WILLOWS', 'The In'))
+def title_case2(title, minor_words=''):
+    title = title.capitalize().split()
+    minor_words = minor_words.lower().split()
+    return ' '.join([word if word in minor_words else word.capitalize() for word in title])
