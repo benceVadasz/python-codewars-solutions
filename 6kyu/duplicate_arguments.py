@@ -6,3 +6,5 @@ def solution(*args):
         else:
             return True
     return False
+# return len(args) != len(set(args))
+
